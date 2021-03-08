@@ -1,0 +1,91 @@
+html, body{
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body:nth-child(-1){
+    padding: 0 2rem;
+
+}
+
+.border{
+    border-radius: 10px !important;
+}
+
+.border-left{
+    border-left-width: 10px !important;
+    margin-top: -10px !important;
+    z-index: -100 !important;
+}
+
+div > p {
+    color: maroon;
+}
+
+img{
+    border-radius: 10px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+a{
+    height: 100%;
+    width: 100%;
+}
+
+a.col.btn.btn-primary.m-2 {
+    height: auto;
+    align-self: stretch;
+}
+
+.form-row{
+    margin: 1rem;
+}
+.form-check-label{
+    margin-right: 1rem;
+}
+
+nav{
+    min-height: 5rem;
+}
+
+.navbar-nav{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-item{
+    margin: 0 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.list-unstyled li *{
+    text-decoration: none;
+}
+
+.max-lines-2 {
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+}
+
+.max-lines-4 {
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 7.2em;
+    line-height: 1.8em;
+}
+
+.list-unstyled li:hover{
+    border-style: solid;
+    border-width: thick;
+    border: rgb(71, 122, 167);
+    background-color: rgba(138, 200, 255, 0.377);
+}

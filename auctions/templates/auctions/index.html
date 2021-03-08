@@ -1,0 +1,20 @@
+{% extends "auctions/layout.html" %}
+
+{% block title %}Active Listings{% endblock %}
+
+{% block body %}
+    <div class="row m-0 mb-4 p-2 pt-3 border-left rounded border-primary bg-light">
+        <h2 class="col">Active Listings</h2>
+    </div>
+    <div class="p-3">
+        {% if listing_list %}
+            <ul class="list-unstyled row">
+                {% for listing in listing_list %}
+                    {% include 'auctions/listing-grid.html' %}
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>There are no listings.</p>
+        {% endif %} 
+    </div>
+{% endblock %}

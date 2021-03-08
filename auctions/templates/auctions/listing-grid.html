@@ -1,0 +1,14 @@
+<li class="col-md-3 media d-flex m-3 p-3 rounded border text-center">
+    <a href="{% url 'listing' listing.pk %}">
+        {% if listing.image %}
+            <img src="{{ listing.image }}">
+        {% endif %}
+        <div calss=" p-3 m-3"> 
+            <div>
+                <h3 class="m-3 max-lines-2">{{ listing.title }} </h3>
+                <p class="alert alert-danger m-3"> Current price: <strong>{{ listing.current_price }} </strong></p>
+            </div>
+            <p class="m-3 text-justify max-lines-4"> {{listing.description}} </p>
+        </div>
+    </a> 
+</li>
